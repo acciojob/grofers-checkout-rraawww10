@@ -8,6 +8,7 @@ document.getElementById('calculate').addEventListener('click', function() {
     const totalRow = document.createElement('tr');
     const totalCell = document.createElement('td');
     totalCell.setAttribute('colspan', '2');
+    totalCell.setAttribute('id', 'ans');
     totalCell.textContent = `Total Savings: ₹${totalPrice.toFixed(2)}`;
     totalRow.appendChild(totalCell);
     const tableBody = document.querySelector('tbody');
